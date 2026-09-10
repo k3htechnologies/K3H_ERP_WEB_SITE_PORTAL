@@ -1,0 +1,63 @@
+@import "tailwindcss";
+@import "./app/styles/theme.css";
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: #F1F1F1 !important;
+}
+
+body {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Apply to any scrollable div */
+.thin-scroll {
+  overflow: auto;
+  position: relative;
+}
+
+/* Hide scrollbar by default (thin + invisible) */
+.thin-scroll::-webkit-scrollbar {
+  width: 2px;
+  /* ultra thin */
+  height: 6px;
+  background: transparent;
+}
+
+/* Scrollbar track (appears only when scrolling/hover) */
+.thin-scroll:hover::-webkit-scrollbar-track,
+.thin-scroll:active::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  /* very light grey */
+}
+
+/* Scrollbar thumb (light color + thin) */
+.thin-scroll:hover::-webkit-scrollbar-thumb,
+.thin-scroll:active::-webkit-scrollbar-thumb {
+  background: rgba(120, 120, 120, 0.4);
+  /* light grey */
+  border-radius: 10px;
+}
+
+/* When NOT scrolling/hover → fully hidden */
+.thin-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+}
+
+.recharts-surface {
+  outline: none;
+}
+
+path.recharts-rectangle {
+  outline: none;
+}

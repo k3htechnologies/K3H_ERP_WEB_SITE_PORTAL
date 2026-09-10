@@ -1,0 +1,14 @@
+@theme {
+  --color-primary: #12a3dd;
+  --color-primary-2: #dbeafe;
+  --color-primary-dark: #135bec;
+
+  --color-background: #f9fafb;
+  --color-surface: #f1f1f1;
+
+  --color-text: #001631;
+  --color-muted: #6b7280;
+
+  /* --font-heading: Impact, Haettenschweiler, 'Arial Narrow Bold',
+    sans-serif; */
+}
