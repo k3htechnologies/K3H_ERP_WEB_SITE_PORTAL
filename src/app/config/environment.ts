@@ -7,7 +7,7 @@ export interface EnvironmentConfig {
 
 //============================ [ DEVELOPMENT CONFIGURATION ] ========================================================
 const developmentConfig: EnvironmentConfig = {
-  apiBaseUrl: import.meta.env.VITE_API_BASE_URL || "http://10.8.2.9:420/api",
+  apiBaseUrl: import.meta.env.VITE_API_BASE_URL || "http://10.8.4.196/api",
 
   apiKey:
     import.meta.env.VITE_API_KEY ||
@@ -18,11 +18,10 @@ const developmentConfig: EnvironmentConfig = {
 
 //============================ [PRODUCTION CONFIGURATION ] ========================================================
 const productionConfig: EnvironmentConfig = {
-  apiBaseUrl: import.meta.env.VITE_API_BASE_URL || "https://k3herpapi.k3htechnologies.com/api",
+  apiBaseUrl: import.meta.env.VITE_API_BASE_URL || "https://k3hwebsiteapi.k3htechnologies.com/api",
   apiKey:
     import.meta.env.VITE_API_KEY ||
     "wedNfr4rZCr4IkpEede+5gSPN76RC5pchp9sDl3epZaNyvUlSt7cXY+/puYhJoiGgcp50WuqNCVtlf8i6A/LdA==",
-    // "TpBgVhTojiO2Ue3kztqI2N/lv7NgtUZgBs0olZHw6HQ/phXqXpadHfJO059HQVTLNyUDi/AbSPGcmP3MdRNtBw==",
   apiTimeout: 30000,
   environment: "PRODUCTION",
 };
